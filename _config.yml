@@ -1,3 +1,6 @@
+baseurl: /starter
+permalink: pretty
+markdown: rdiscount
 prose:
   rooturl: '_posts'
   siteurl: 'http://prose.github.io/starter/'
@@ -5,10 +8,24 @@ prose:
   media: 'media'
   metadata:
     _posts:
+      - name: "category"
+        field:
+          element: "hidden"
+          value: "blog"
       - name: "layout"
         field:
           element: "hidden"
           value: "blog"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "splash"
+        field:
+          element: "text"
+          label: "Splash image"
+          value: ""
       - name: "tags"
         field:
           element: "multiselect"
@@ -24,6 +41,11 @@ prose:
         field:
           element: "hidden"
           value: "page"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
       - name: "permalink"
         field:
           element: "text"
